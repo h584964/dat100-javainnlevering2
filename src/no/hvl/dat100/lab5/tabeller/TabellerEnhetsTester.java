@@ -24,13 +24,14 @@ class TabellerEnhetsTester {
 		assertEquals("[1,4,6]", Tabeller.tilStreng(tabell1));
 		assertEquals("[1]", Tabeller.tilStreng(tabell2));
 		assertEquals("[]", Tabeller.tilStreng(tabell3));
+		
 	}
 	
 	@Test
 	void testSummer() {
 		assertEquals(11,Tabeller.summer(tabell1));
-		assertEquals(1,Tabeller.summer(tabell2));
-		assertEquals(0,Tabeller.summer(tabell3));
+		assertEquals(1,Tabeller.summer2(tabell2));
+		assertEquals(0,Tabeller.summer3(tabell3));
 	}
 
 	@Test
